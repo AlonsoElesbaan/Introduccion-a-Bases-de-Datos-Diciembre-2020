@@ -11,7 +11,9 @@
 ### 3. Desarrollo :rocket:
 1. Para poder hacer uso de MongoDB en la nube se hará uso del servicio __Atlas__ proveeido por el propio equipo de MongoDB, abrir la siguiente url, llenar los campos del formulario y dar clic en el botón de __Get srtarted free__
 
-   URL: https://www.mongodb.com/cloud/atlas?jmp=docs
+   URL: https://www.mongodb.com/atlas
+
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/43dcc56d-6963-4b7e-b4de-350196bb982a)
 
    ![Registro en MongoDB atlas](imagenes/registro-mongodb-atlas.png)
 
