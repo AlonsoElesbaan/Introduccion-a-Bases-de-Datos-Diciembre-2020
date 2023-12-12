@@ -9,81 +9,90 @@
 - Ninguno
 
 ### 3. Desarrollo :rocket:
-1. Para poder hacer uso de MongoDB en la nube se hará uso del servicio __Atlas__ proveeido por el propio equipo de MongoDB, abrir la siguiente url, llenar los campos del formulario y dar clic en el botón de __Get srtarted free__
+1. Para poder hacer uso de MongoDB en la nube se hará uso del servicio __Atlas__ proveeido por el propio equipo de MongoDB, abrir la siguiente url, llenar los campos del formulario, y dar clic en el botón de __Create your Atlas account__
 
-   URL: https://www.mongodb.com/atlas
+   URL: https://www.mongodb.com/cloud/atlas/register
 
-   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/43dcc56d-6963-4b7e-b4de-350196bb982a)
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/a375fb4a-08dc-4afe-b6e6-4e2c13526268)
 
-   ![Registro en MongoDB atlas](imagenes/registro-mongodb-atlas.png)
+1. Te mandará un correo de verificación.
 
-1. Elegir el tipo de __Cluster__, en donde se seleccionará __Starter Clusters__ que es el que es libre de costo, dar clic en el botón __Create a Cluster__.
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/f371bc9b-122d-4423-8a12-d72937b1baf2)
 
-   ![Seleccionando cluster](imagenes/seleccionando-cluster.png)
+1. Es necesario ingresar a tu cuenta de correo y abrir el correo de __MongoDB Cloud__ y dar clic en __Verify Email__
+
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/65598d96-30f2-4dee-af5b-22ad808a5cbe)
+
+1. Posteriormente en la página que se abre dar clic en __Continue__
+
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/25bc3b07-b2e1-46d6-b145-9a9b287f27bd)
+
+1. Llenar el siguiente formulario seleccionando las opciones y dar clic en __Finish__:
+   * Learn MongoDB
+   * New to MongoDB
+   * Other
+   * Other
+   * Not sure
+
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/47fe6067-cb85-4875-b4bf-36ed2ad0c8c0)
+
+1. Elegir el tipo de __Cluster__, en donde se seleccionará __M0 FREE__ que es el que es libre de costo, dejar todas las opciones como vienen por defecto, dar clic en el botón __Create__.
+
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/5ed4917d-d7e7-4efd-bf77-3a890f0b531e)
+
    Observar que con MongoDB Atlas se crean __Clusters__ y no __Servidores__.
-
-1. Después se tienen que seleccionar las opciones para el __Starter Cluster__ y las opciones por omisión son las correctas (AWM Amazon, N. Virginia, M0 Sandbox, MongoDB 4.0, Cluster 0)
-
-   ![Configurando el Started Cluster](imagenes/configurando-cluster.png)
-   Y presionar en el botón __Create Cluster__, lo que va a crear un __Cluster__ de trabajo, acción que puede demorar unos 5 mins.
-
-   ![Cluster creándose](imagenes/creando-cluster-01.png)
 
    Cuando el __Cluster__ ya está creado se observa la página como la siguiente:
 
-   ![Cluster creado](imagenes/creando-cluster-02.png)
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/06f86cbc-fa5d-4a47-9eda-af1712b874ae)
 
-1. Lo que sigue es iniciar una conexión al cluster de MongoDB en la nube, esto se realiza dando clic en el botón __CONNECT__
+1. Lo que sigue es crear una conexión al cluster de MongoDB en la nube
+   Introduce los datos que desees para ingresar a tu base de datos, __por ejemplo__:
 
-  ![Conectando al servidor MongoDB](imagenes/conectando-a-mongodb.png)
+   - Usuario: mongouser
+   - Password: mongouser1234 (Puedes usar el Autogenerador de Password Seguro)
+   
+   **Recuerda el vídeo de contraseñas seguras `mongouser1234` no es una contraseña muy segura que digamos...**  
+   
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/06c2a846-6964-4f0f-9fa4-1dbfedb09bfc)
+   
+   **Guarda la contraseña en un sitio seguro porque es la que utilizarás para conectarte al cluster**  
+   **__Nota:__ No uses los datos del ejemplo para colocar información sensible.**
+
+   Y presionar en el botón __Create User__
+
+   Se agregará el usuario a la lista de usuarios
+
+   MongoDB Atlas hace una validación y solicita definir que dirección IP se va a conectar a el servidor y que usuario.
+   
+   Así que dá clic en el botón __Add My Current IP Address__
+
+   En la lista aparecerá tu IP con la descripcion "My IP Address"
+   
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/64f1dc9f-8119-4a3c-896b-af8fb41832f5)
   
-  MongoDB Atlas hace una validación y solicita definir que dirección IP se va a conectar a el servidor y que usuario.
-
-  Así que dá clic en el botón __Add Your Current IP Address__
-
-  ![Agregando ip](imagenes/agregando-ip.png)
+   Si te conectas desde varios lugares diferentes se sugiere etiquetar la dirección IP, para llevar un registro de a quién corresponde cada IP y más adelante poder eliminar las direcciones que ya no sean necesarias.
   
-  Se sugiere etiquetar la dirección IP, para llevar un registro de a quién corresponde cada IP y más adelante poder eliminar las direcciones que ya no sean necesarias.
+   Y posteriormente se dá clic en el botón __Finish and Close__
 
-  Introduce los datos que desees para ingresar a tu base de datos, por ejemplo:
+1. En la ventana que aparece das clic en __Go to Overview__
 
-  - Usuario: introabd
-  - Password: introabd1234
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/4a89ddfa-7bbd-4893-a473-2f1a5b87c159)
 
-  **Recuerda el vídeo de contraseñas seguras `introabd1234` no es una contraseña muy segura que digamos...**
+1. Para obtener la cadena de conexion das clic en el boton __Conect__ donde se seleccionará __Compass__ para continuar en el siguiente ejemplo.
 
-  ![Creando usuario](imagenes/creando-usuario.png)
-  
-  Y presionar en el botón __Create MongoDB User__
-
-  Y posteriormente se dá clic en el botón __Choose a connection method__ donde se seleccionará __Compass__ para continuar en el siguiente ejemplo.
-
-  ![Seleccionando Compass como método de conexión](imagenes/seleccionando-compass.png)
-
-1. Una vez creada la configuración en __MongoDB Atlas__ se realiza la conexión por medio de __MongoDB Compass__, así que estándo en la página de MongoDB Atlas se da clic en la opción __Connect with MongoDB Compass__
-
-   ![Eligiendo conexión con MongoDB Compass](imagenes/eligiendo-compass.png)
-
-   Después de dar clic, se elige la opción donde ya tenemos __Compass__ instalado dando clic en __I have Compass__.
-
-   ![Eligiendo Compass instalado](imagenes/compass-instalado.png)
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/fd58656b-a755-4a1b-99e3-91a0576d3aaa)
    
-   En el punto 1 la opción actual es la correcta y en el punto 2 se dá clic en el botón __Copy__
+   Seleccionas la opcion __I have MongoDB Compass installed__ para que te muestre la cadena de conexion. Copia la __connection string__ y pegalo en un block de notas, donde deberás reemplazar el texto __<password>__ por el password asignado al usuario que creaste en el paso anterior.
 
-1. Si __MongoDB Compass__ está abierto es necesario cerrarlo y abrirlo nuevamente, al momento de iniciar, __Compass__ detecta la información copiada al portapapeles y pregunta si se desea usar la información para realizar la conexión:
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/ca19f011-b163-4a47-ab23-12e08fc3dfdd)
 
-   ![Iniciando Compass](imagenes/iniciando-compass.png)
-   
-   Dar clic en el botón __Yes__ y __Compass__ en automático llena todos los campos de conexión, menos la clave, así que se teclea la clave y se da clic en el botón __CONNECT__.
+1. Si __MongoDB Compass__ está abierto es necesario cerrarlo y abrirlo nuevamente, la ventana inicial solicita la cadena de conexión, en donde debes pegar la cadena de conexion que obtuviste en el paso anterior:
 
-   ![Datos de conexión](imagenes/datos-de-conexion.png)
-   
-   Recuerda que los datos de conexión que ingresaste al principio.
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/7a9e4d22-2183-49d0-8a78-2415164a525d)
 
-   __Nota:__ No uses los datos del ejemplo para colocar información sensible.
-
-   ![Compass conectado a MongoDB Atlas](imagenes/compass-conectado.png)
-   
    En este punto ya __Compass__ ya estará conectado al __Cluster0__ que como se puede ver en la columna izquierda consta de 3 instancias de MongoDB corriendo en paralelo lo que se puede escalar según las necesidades.
+
+   ![image](https://github.com/AlonsoElesbaan/Introduccion-a-Bases-de-Datos-Diciembre-2020/assets/83846645/11609763-45ad-4e26-8b8b-6944fbcfa1fa)
 
 [`Anterior`](../Readme.md#configuración-de-mongodb-en-la-nube) | [`Siguiente`](../Readme.md#operaciones-con-bases-de-datos-1)   
