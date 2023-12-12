@@ -28,14 +28,14 @@ A continuación se realizaran algunas operaciones de agregar, modificar y elimin
    Y entonces el correspondiente formato JSON será:
    ```json
    {
-     id:"4000",
-     titulo:"Avengers: Endgame (2019)",
-     genres:"Fantasy|Sci-Fi"
-   }
+     "id":"4000",
+     "titulo":"Avengers: Endgame (2019)",
+     "genres":"Fantasy|Sci-Fi"
+   },
    {
-     id:"4001",
-     titulo:"Glass (2019)",
-     genres:"Drama|Fantasy"
+     "id":"4001",
+     "titulo":"Glass (2019)",
+     "genres":"Drama|Fantasy"
    }
    ```
    Ahora ir a __MongoDB Compass__ y agregar ambos documentos:
