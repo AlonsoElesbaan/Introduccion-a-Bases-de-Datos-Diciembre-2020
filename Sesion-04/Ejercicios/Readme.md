@@ -55,19 +55,19 @@ A continuación se realizaran algunas operaciones de agregar, modificar y elimin
 
    ```json
    {
-     id:"4001",
-     titulo:"Glass (2019)",
-     genres:"Drama|Fantasy",
-     valoraciones: [
+     "id":"4001",
+     "titulo":"Glass (2019)",
+     "genres":"Drama|Fantasy",
+     "valoraciones": [
        {
-         userid: "1563",
-         movieid: "4001",
-         rating: "4"
+         "userid": "1563",
+         "movieid": "4001",
+         "rating": "4"
        },
        {
-         userid: "434",
-         movieid: "4001",
-         rating: "5"
+         "userid": "434",
+         "movieid": "4001",
+         "rating": "5"
        }
      ]
    }
