@@ -24,11 +24,11 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
 
    ```json
    {
-     id:"7000",
-     gen:"M",
-     edad:"47",
-     ocup:"12",
-     cp:"06780"
+     "id":"7000",
+     "gen":"M",
+     "edad":"47",
+     "ocup":"12",
+     "cp":"06780"
    }
    ```
 
@@ -50,12 +50,12 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
    Agregar el siguiente documento JSON de un usuario:
    ```json
    {
-     id:"7001",
-     gen:"F",
-     edad:"36",
-     ocup:"10",
-     cp:"06780",
-     pelisValoradas: [
+     "id":"7001",
+     "gen":"F",
+     "edad":"36",
+     "ocup":"10",
+     "cp":"06780",
+     "pelisValoradas": [
        "One Flew Over the Cuckoo's Nest (1975)",
        "James and the Giant Peach (1996)",
        "My Fair Lady (1964)"       
